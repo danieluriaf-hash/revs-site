@@ -108,6 +108,34 @@ a {
   color: var(--accent);
 }
 
+.recovery-shell {
+  max-width: 680px;
+}
+
+.recovery-card {
+  display: grid;
+  gap: 14px;
+}
+
+.primary-action {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary-action:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
 footer {
   margin-top: 48px;
   padding-top: 24px;
