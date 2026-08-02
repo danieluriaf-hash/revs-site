@@ -7,53 +7,24 @@
     <title>Soporte · Revs</title>
     <link rel="stylesheet" href="revs-legal.css">
   </head>
-  <body>
+  <body data-legal-page="support">
     <main>
       <nav aria-label="Navegación principal">
-        <a href="./">Inicio</a>
-        <a href="privacy.html">Privacidad</a>
-        <a href="support.html" aria-current="page">Soporte</a>
+        <a href="./" data-nav="home">Inicio</a>
+        <a href="privacy.html" data-nav="privacy">Privacidad</a>
+        <a href="support.html" data-nav="support" aria-current="page">Soporte</a>
+        <label class="language-picker">
+          <span data-language-label>Idioma</span>
+          <select data-language-select aria-label="Idioma"></select>
+        </label>
       </nav>
-
       <p class="eyebrow">Revs</p>
-      <h1>Soporte</h1>
-      <p>
-        Para preguntas, incidencias o solicitudes relacionadas con Revs,
-        escribe a
-        <a href="mailto:danieluriaf@gmail.com">danieluriaf@gmail.com</a>.
-        Indica el modelo de iPhone, la versión de iOS y una descripción del
-        problema. No envíes contraseñas ni códigos de acceso.
-      </p>
-
-      <h2>Cuenta y acceso</h2>
-      <p>
-        Puedes iniciar sesión mediante correo electrónico o con Apple. Si no
-        puedes acceder, incluye en tu mensaje el correo asociado a la cuenta,
-        pero nunca tu contraseña.
-      </p>
-
-      <h2>Ubicación</h2>
-      <p>
-        Revs solicita la ubicación únicamente mientras utilizas la app. Puedes
-        cambiar el permiso en Ajustes de iOS y controlar desde Revs si tu coche
-        aparece visible, solo para amigos o invisible.
-      </p>
-
-      <h2>Eliminar la cuenta</h2>
-      <p>
-        En Revs, abre <strong>Ajustes → Cuenta y seguridad → Eliminar cuenta</strong>.
-        La eliminación es permanente e incluye la cuenta y el contenido personal
-        asociado. Si no puedes entrar en la app, solicita ayuda mediante el correo
-        de soporte.
-      </p>
-
-      <h2>Privacidad</h2>
-      <p>
-        Encontrarás información detallada sobre los datos utilizados por Revs en
-        la <a href="privacy.html">Política de privacidad</a>.
-      </p>
-
-      <footer>© 2026 Daniel Uría Fernández · Revs</footer>
+      <article data-legal-content>
+        <h1>Soporte</h1>
+        <p>Cargando la página en tu idioma…</p>
+      </article>
+      <footer data-legal-footer>© 2026 Daniel Uría Fernández · Revs</footer>
     </main>
+    <script src="legal-i18n.js"></script>
   </body>
 </html>
