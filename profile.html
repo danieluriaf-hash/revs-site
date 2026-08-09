@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Abre un perfil público de Revs.">
+    <title>Perfil de Revs</title>
+    <link rel="stylesheet" href="revs-legal.css">
+    <style>
+      .profile-actions { display: grid; gap: .75rem; margin-top: 1.5rem; }
+      .profile-actions a { display: block; padding: .85rem 1rem; border-radius: 999px; text-align: center; text-decoration: none; font-weight: 700; }
+      .open-revs { background: #ff4a24; color: #fff; }
+      .store-link { border: 1px solid currentColor; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Navegación principal"><a href="./">Revs</a></nav>
+      <p class="eyebrow">Revs</p>
+      <h1>Perfil público</h1>
+      <p>Abre este perfil en Revs para ver su garaje, coches, rutas y actividad pública.</p>
+      <div class="profile-actions">
+        <a id="open-revs" class="open-revs" href="#">Abrir en Revs</a>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.revs3.revs3_app">Descargar para Android</a>
+        <a class="store-link" href="https://apps.apple.com/app/id6794880233">Descargar para iPhone</a>
+      </div>
+      <footer>© 2026 Daniel Uría Fernández · Revs</footer>
+    </main>
+    <script>
+      const id = new URLSearchParams(location.search).get('id') || '';
+      const validId = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id);
+      const button = document.getElementById('open-revs');
+      if (validId) {
+        button.href = `com.revs3.revs3app://users/${encodeURIComponent(id)}`;
+      } else {
+        button.textContent = 'Enlace de perfil no válido';
+        button.removeAttribute('href');
+        button.setAttribute('aria-disabled', 'true');
+      }
+    </script>
+  </body>
+</html>
