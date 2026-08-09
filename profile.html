@@ -30,8 +30,34 @@
       const id = new URLSearchParams(location.search).get('id') || '';
       const validId = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id);
       const button = document.getElementById('open-revs');
+      let fallbackTimer;
+
+      function storeUrl() {
+        return /iPad|iPhone|iPod/i.test(navigator.userAgent)
+          ? 'https://apps.apple.com/app/id6794880233'
+          : 'https://play.google.com/store/apps/details?id=com.revs3.revs3_app';
+      }
+
+      function openProfile() {
+        if (!validId) return;
+        const appUrl = `com.revs3.revs3app://users/${encodeURIComponent(id)}`;
+        clearTimeout(fallbackTimer);
+        fallbackTimer = setTimeout(() => {
+          if (document.visibilityState === 'visible') location.replace(storeUrl());
+        }, 1600);
+        location.href = appUrl;
+      }
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') clearTimeout(fallbackTimer);
+      });
+
       if (validId) {
-        button.href = `com.revs3.revs3app://users/${encodeURIComponent(id)}`;
+        button.addEventListener('click', (event) => {
+          event.preventDefault();
+          openProfile();
+        });
+        window.addEventListener('load', () => setTimeout(openProfile, 250));
       } else {
         button.textContent = 'Enlace de perfil no válido';
         button.removeAttribute('href');
