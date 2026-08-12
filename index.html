@@ -3,42 +3,163 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Información legal y soporte de Revs.">
-    <title>Revs · Información y soporte</title>
-    <link rel="stylesheet" href="revs-legal.css">
+    <meta name="theme-color" content="#0b0b0c">
+    <meta name="description" content="Revs es la app para guardar tus coches, descubrir rutas y conectar con la comunidad del motor.">
+    <meta property="og:title" content="Revs — Tu pasión, en marcha">
+    <meta property="og:description" content="Tu garaje, rutas, lugares y comunidad del motor, en una sola app.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://danieluriaf-hash.github.io/revs-site/assets/og-revs.png">
+    <meta property="og:url" content="https://danieluriaf-hash.github.io/revs-site/">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Revs — Tu pasión, en marcha</title>
+    <link rel="icon" href="assets/revs-icon.png">
+    <link rel="preload" href="assets/revs-logo.png" as="image">
+    <link rel="stylesheet" href="landing.css">
   </head>
   <body>
-    <main>
-      <nav aria-label="Navegación principal">
-        <a href="./">Inicio</a>
-        <a href="privacy.html">Privacidad</a>
-        <a href="support.html">Soporte</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Revs, inicio">
+        <img src="assets/revs-logo.png" alt="" width="54" height="54">
+        <span>REVS</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#descubre">Descubre</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#descargar">Descargar</a>
       </nav>
+      <a class="header-cta" href="#descargar">Consigue Revs</a>
+    </header>
 
-      <p class="eyebrow">Revs</p>
-      <h1>Tu garaje, tu comunidad y la carretera.</h1>
-      <p>
-        Revs permite guardar tus vehículos, personalizar su información,
-        conectar con otros aficionados y descubrir coches y lugares desde el
-        mapa, siempre con controles sobre la visibilidad de tu ubicación.
-      </p>
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Hecha para quienes viven el motor</p>
+          <h1 id="hero-title">Tu pasión,<br><em>en marcha.</em></h1>
+          <p class="hero-lede">Guarda tus coches, encuentra a otros aficionados, descubre puntos Revs y convierte cada trayecto en una historia.</p>
+          <div class="store-row" id="descargar">
+            <a class="store-button" href="https://apps.apple.com/app/id6794880233" aria-label="Descargar Revs en App Store">
+              <span class="store-icon apple" aria-hidden="true">●</span>
+              <span><small>Descárgala en el</small><strong>App Store</strong></span>
+            </a>
+            <a class="store-button" href="https://play.google.com/apps/testing/com.revs3.revs3_app" aria-label="Participar en la prueba cerrada de Revs en Google Play">
+              <span class="play-mark" aria-hidden="true"></span>
+              <span><small>Prueba cerrada en</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+          <div class="hero-proof" aria-label="Funciones destacadas">
+            <span>iOS y Android</span><i></i><span>Ubicación bajo tu control</span><i></i><span>Comunidad real</span>
+          </div>
+        </div>
 
-      <div class="card">
-        <strong>¿Necesitas ayuda?</strong>
-        <p>
-          Escríbenos a
-          <a href="mailto:danieluriaf@gmail.com">danieluriaf@gmail.com</a> o
-          consulta la <a href="support.html">página de soporte</a>.
-        </p>
-      </div>
+        <div class="hero-visual" aria-label="Vista previa de Revs en varios teléfonos">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <figure class="phone phone-left">
+            <div class="phone-speaker"></div>
+            <img src="assets/screens/feed.png" alt="Feed de la comunidad Revs">
+          </figure>
+          <figure class="phone phone-main">
+            <div class="phone-speaker"></div>
+            <img src="assets/screens/map.png" alt="Mapa social de Revs">
+          </figure>
+          <figure class="phone phone-right">
+            <div class="phone-speaker"></div>
+            <img src="assets/screens/profile.png" alt="Perfil y garaje de un usuario de Revs">
+          </figure>
+          <div class="floating-card live-card"><span class="pulse"></span><strong>En carretera</strong><small>Comparte solo cuando quieras</small></div>
+          <div class="floating-card route-card"><b>↗</b><span><strong>Rutas</strong><small>Graba. Guarda. Comparte.</small></span></div>
+        </div>
+      </section>
 
-      <h2>Información legal</h2>
-      <p>
-        Consulta cómo tratamos los datos personales en nuestra
-        <a href="privacy.html">Política de privacidad</a>.
-      </p>
+      <section class="manifesto" id="descubre">
+        <div class="section-shell manifesto-grid">
+          <p class="section-index">01 — La experiencia</p>
+          <div>
+            <h2>Mucho más que<br>una app de coches.</h2>
+            <p>Revs une lo que antes estaba disperso: tu garaje digital, las fotos de la comunidad, las mejores rutas y los lugares que merece la pena descubrir.</p>
+          </div>
+        </div>
+        <div class="ticker" aria-hidden="true"><span>GARAJE&nbsp;&nbsp;·&nbsp;&nbsp; COMUNIDAD&nbsp;&nbsp;·&nbsp;&nbsp; RUTAS&nbsp;&nbsp;·&nbsp;&nbsp; MAPA&nbsp;&nbsp;·&nbsp;&nbsp; GARAJE&nbsp;&nbsp;·&nbsp;&nbsp; COMUNIDAD&nbsp;&nbsp;·&nbsp;&nbsp; RUTAS&nbsp;&nbsp;·&nbsp;&nbsp; MAPA</span></div>
+      </section>
 
-      <footer>© 2026 Daniel Uría Fernández · Revs</footer>
+      <section class="features section-shell" id="funciones">
+        <div class="feature-heading">
+          <p class="section-index">02 — Todo conectado</p>
+          <h2>Una app.<br><span>Toda tu vida sobre ruedas.</span></h2>
+        </div>
+
+        <article class="feature feature-map">
+          <div class="feature-copy">
+            <span class="feature-number">01</span>
+            <p class="eyebrow red">Mapa social</p>
+            <h3>Encuentra tu<br>próxima historia.</h3>
+            <p>Descubre puntos Revs, rutas y coches de la comunidad. Comparte tu ubicación únicamente cuando tú decidas.</p>
+            <ul class="mini-list"><li>Localización precisa y opcional</li><li>Rutas y puntos cercanos</li><li>Vehículos activos y aparcados</li></ul>
+          </div>
+          <div class="feature-phone-stage map-stage">
+            <div class="map-glow"></div>
+            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/map.png" alt="Mapa de Revs con puntos y coches cercanos"></figure>
+          </div>
+        </article>
+
+        <article class="feature feature-feed">
+          <div class="feature-phone-stage feed-stage">
+            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/feed.png" alt="Publicación de un coche en el feed de Revs"></figure>
+            <div class="reaction reaction-heart">♥ <span>42</span></div>
+            <div class="reaction reaction-wave">👋</div>
+          </div>
+          <div class="feature-copy">
+            <span class="feature-number">02</span>
+            <p class="eyebrow red">Comunidad</p>
+            <h3>Comparte lo que<br>te mueve.</h3>
+            <p>Publica las mejores fotos de tu garaje, sigue a otros entusiastas y descubre historias cerca de ti o en cualquier parte.</p>
+            <ul class="mini-list"><li>Feed global y cercano</li><li>Likes y comentarios</li><li>Noticias del motor</li></ul>
+          </div>
+        </article>
+
+        <article class="feature feature-garage">
+          <div class="feature-copy">
+            <span class="feature-number">03</span>
+            <p class="eyebrow red">Tu espacio</p>
+            <h3>Cada coche tiene<br>una historia.</h3>
+            <p>Crea tu garaje digital con datos del catálogo, personaliza la visibilidad y presenta tus coches como se merecen.</p>
+            <ul class="mini-list"><li>Catálogo visual detallado</li><li>Perfil y garaje personal</li><li>Privacidad por vehículo</li></ul>
+          </div>
+          <div class="feature-phone-stage garage-stage">
+            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/cars.png" alt="Garaje digital y listado de coches de Revs"></figure>
+            <img class="car-cutout" src="assets/screens/car-render.png" alt="Render de un automóvil del catálogo de Revs">
+          </div>
+        </article>
+      </section>
+
+      <section class="route-band">
+        <div class="route-line" aria-hidden="true"></div>
+        <div class="section-shell route-content">
+          <p class="section-index">03 — Tu siguiente ruta</p>
+          <h2>No se trata solo<br>de llegar.</h2>
+          <p>Se trata de todo lo que ocurre entre el punto A y el punto B.</p>
+          <a href="#descargar" class="text-link">Empieza a conducir <span>→</span></a>
+        </div>
+      </section>
+
+      <section class="download-final section-shell">
+        <img class="final-logo" src="assets/revs-logo.png" alt="Logo de Revs">
+        <p class="eyebrow centered"><span></span> Revs está disponible</p>
+        <h2>Tu garaje te espera.</h2>
+        <p>Descarga Revs gratis y forma parte de una comunidad creada para la gente que siente lo mismo que tú al escuchar arrancar un motor.</p>
+        <div class="store-row centered-row">
+          <a class="store-button light" href="https://apps.apple.com/app/id6794880233" aria-label="Descargar Revs en App Store"><span class="store-icon apple" aria-hidden="true">●</span><span><small>Descárgala en el</small><strong>App Store</strong></span></a>
+          <a class="store-button light" href="https://play.google.com/apps/testing/com.revs3.revs3_app" aria-label="Participar en la prueba cerrada de Revs en Google Play"><span class="play-mark" aria-hidden="true"></span><span><small>Prueba cerrada en</small><strong>Google Play</strong></span></a>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="assets/revs-logo.png" alt="" width="42" height="42"><strong>REVS</strong></div>
+      <p>La comunidad del motor, en tu bolsillo.</p>
+      <nav aria-label="Información legal"><a href="privacy.html">Privacidad</a><a href="support.html">Soporte</a></nav>
+      <small>© 2026 Daniel Uría Fernández · Revs</small>
+    </footer>
+    <script src="landing.js"></script>
   </body>
 </html>
