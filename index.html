@@ -18,146 +18,164 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Revs, inicio">
+      <a class="brand" href="#top" aria-label="Revs, inicio" data-i18n-aria="brandHome">
         <img src="assets/revs-logo.png" alt="" width="54" height="54">
         <span>REVS</span>
       </a>
-      <nav class="desktop-nav" aria-label="Navegación principal">
-        <a href="#descubre">Descubre</a>
-        <a href="#funciones">Funciones</a>
-        <a href="#descargar">Descargar</a>
+      <nav class="desktop-nav" aria-label="Navegación principal" data-i18n-aria="mainNavigation">
+        <a href="#descubre" data-i18n="navDiscover">Descubre</a>
+        <a href="#funciones" data-i18n="navFeatures">Funciones</a>
+        <a href="#descargar" data-i18n="navDownload">Descargar</a>
       </nav>
-      <a class="header-cta" href="#descargar">Consigue Revs</a>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Idioma" data-i18n-aria="language">
+          <button type="button" data-language="es" aria-pressed="true">ES</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="header-cta" href="#descargar" data-i18n="headerCta">Consigue Revs</a>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero section-shell" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> Hecha para quienes viven el motor</p>
-          <h1 id="hero-title">Tu pasión,<br><em>en marcha.</em></h1>
-          <p class="hero-lede">Guarda tus coches, encuentra a otros aficionados, descubre puntos Revs y convierte cada trayecto en una historia.</p>
+          <p class="eyebrow"><span></span><b data-i18n="heroEyebrow">Hecha para quienes viven el motor</b></p>
+          <h1 id="hero-title" data-i18n-html="heroTitle">Tu pasión,<br><em>en marcha.</em></h1>
+          <p class="hero-lede" data-i18n="heroLead">Guarda tus coches, encuentra a otros aficionados, descubre puntos Revs y convierte cada trayecto en una historia.</p>
           <div class="store-row" id="descargar">
-            <a class="store-button" href="https://apps.apple.com/app/id6794880233" aria-label="Descargar Revs en App Store">
-              <span class="store-icon apple" aria-hidden="true">●</span>
-              <span><small>Descárgala en el</small><strong>App Store</strong></span>
+            <a class="store-button" href="https://apps.apple.com/app/id6794880233" aria-label="Descargar Revs en App Store" data-i18n-aria="appStoreAria">
+              <span class="store-icon apple" aria-hidden="true"></span>
+              <span><small data-i18n="appStoreOverline">Descárgala en el</small><strong>App Store</strong></span>
             </a>
-            <a class="store-button" href="https://play.google.com/apps/testing/com.revs3.revs3_app" aria-label="Participar en la prueba cerrada de Revs en Google Play">
+            <a class="store-button" href="https://play.google.com/apps/testing/com.revs3.revs3_app" aria-label="Participar en la prueba cerrada de Revs en Google Play" data-i18n-aria="playStoreAria">
               <span class="play-mark" aria-hidden="true"></span>
-              <span><small>Prueba cerrada en</small><strong>Google Play</strong></span>
+              <span><small data-i18n="playStoreOverline">Prueba cerrada en</small><strong>Google Play</strong></span>
             </a>
           </div>
-          <div class="hero-proof" aria-label="Funciones destacadas">
-            <span>iOS y Android</span><i></i><span>Ubicación bajo tu control</span><i></i><span>Comunidad real</span>
+          <div class="hero-proof" aria-label="Funciones destacadas" data-i18n-aria="highlights">
+            <span data-i18n="proofPrivacy">Ubicación bajo tu control</span><i></i><span data-i18n="proofCommunity">Comunidad real</span>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Vista previa de Revs en varios teléfonos">
+        <div class="hero-visual" aria-label="Vista previa de Revs en varios teléfonos" data-i18n-aria="previewAria">
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <figure class="phone phone-left">
             <div class="phone-speaker"></div>
-            <img src="assets/screens/feed.png" alt="Feed de la comunidad Revs">
+            <img src="assets/screens/feed.png" alt="Feed de la comunidad Revs" data-i18n-alt="feedAlt">
           </figure>
           <figure class="phone phone-main">
             <div class="phone-speaker"></div>
-            <img src="assets/screens/map.png" alt="Mapa social de Revs">
+            <img src="assets/screens/map.png" alt="Mapa social de Revs" data-i18n-alt="mapAlt">
           </figure>
           <figure class="phone phone-right">
             <div class="phone-speaker"></div>
-            <img src="assets/screens/profile.png" alt="Perfil y garaje de un usuario de Revs">
+            <img src="assets/screens/profile.png" alt="Perfil y garaje de un usuario de Revs" data-i18n-alt="profileAlt">
           </figure>
-          <div class="floating-card live-card"><span class="pulse"></span><strong>En carretera</strong><small>Comparte solo cuando quieras</small></div>
-          <div class="floating-card route-card"><b>↗</b><span><strong>Rutas</strong><small>Graba. Guarda. Comparte.</small></span></div>
+          <div class="floating-card live-card"><span class="pulse"></span><strong data-i18n="onRoad">En carretera</strong><small data-i18n="shareWhen">Comparte solo cuando quieras</small></div>
+          <div class="floating-card route-card"><b>↗</b><span><strong data-i18n="routes">Rutas</strong><small data-i18n="recordSaveShare">Graba. Guarda. Comparte.</small></span></div>
         </div>
       </section>
 
       <section class="manifesto" id="descubre">
         <div class="section-shell manifesto-grid">
-          <p class="section-index">01 — La experiencia</p>
+          <p class="section-index" data-i18n="experienceIndex">01 — La experiencia</p>
           <div>
-            <h2>Mucho más que<br>una app de coches.</h2>
-            <p>Revs une lo que antes estaba disperso: tu garaje digital, las fotos de la comunidad, las mejores rutas y los lugares que merece la pena descubrir.</p>
+            <h2 data-i18n-html="experienceTitle">Mucho más que<br>una app de coches.</h2>
+            <p data-i18n="experienceCopy">Revs une lo que antes estaba disperso: tu garaje digital, las fotos de la comunidad, las mejores rutas y los lugares que merece la pena descubrir.</p>
           </div>
         </div>
-        <div class="ticker" aria-hidden="true"><span>GARAJE&nbsp;&nbsp;·&nbsp;&nbsp; COMUNIDAD&nbsp;&nbsp;·&nbsp;&nbsp; RUTAS&nbsp;&nbsp;·&nbsp;&nbsp; MAPA&nbsp;&nbsp;·&nbsp;&nbsp; GARAJE&nbsp;&nbsp;·&nbsp;&nbsp; COMUNIDAD&nbsp;&nbsp;·&nbsp;&nbsp; RUTAS&nbsp;&nbsp;·&nbsp;&nbsp; MAPA</span></div>
+        <div class="ticker" aria-hidden="true"><span data-i18n="ticker">GARAJE · COMUNIDAD · RUTAS · MAPA · GARAJE · COMUNIDAD · RUTAS · MAPA</span></div>
       </section>
 
       <section class="features section-shell" id="funciones">
         <div class="feature-heading">
-          <p class="section-index">02 — Todo conectado</p>
-          <h2>Una app.<br><span>Toda tu vida sobre ruedas.</span></h2>
+          <p class="section-index" data-i18n="connectedIndex">02 — Todo conectado</p>
+          <h2 data-i18n-html="connectedTitle">Una app.<br><span>Toda tu vida sobre ruedas.</span></h2>
         </div>
 
         <article class="feature feature-map">
           <div class="feature-copy">
             <span class="feature-number">01</span>
-            <p class="eyebrow red">Mapa social</p>
-            <h3>Encuentra tu<br>próxima historia.</h3>
-            <p>Descubre puntos Revs, rutas y coches de la comunidad. Comparte tu ubicación únicamente cuando tú decidas.</p>
-            <ul class="mini-list"><li>Localización precisa y opcional</li><li>Rutas y puntos cercanos</li><li>Vehículos activos y aparcados</li></ul>
+            <p class="eyebrow red" data-i18n="socialMap">Mapa social</p>
+            <h3 data-i18n-html="mapTitle">Encuentra tu<br>próxima historia.</h3>
+            <p data-i18n="mapCopy">Descubre puntos Revs, rutas y coches de la comunidad. Comparte tu ubicación únicamente cuando tú decidas.</p>
+            <ul class="mini-list"><li data-i18n="mapBullet1">Localización precisa y opcional</li><li data-i18n="mapBullet2">Rutas y puntos cercanos</li><li data-i18n="mapBullet3">Vehículos activos y aparcados</li></ul>
           </div>
           <div class="feature-phone-stage map-stage">
             <div class="map-glow"></div>
-            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/map.png" alt="Mapa de Revs con puntos y coches cercanos"></figure>
+            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/map.png" alt="Mapa de Revs con puntos y coches cercanos" data-i18n-alt="mapFeatureAlt"></figure>
           </div>
         </article>
 
         <article class="feature feature-feed">
           <div class="feature-phone-stage feed-stage">
-            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/feed.png" alt="Publicación de un coche en el feed de Revs"></figure>
+            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/feed.png" alt="Publicación de un coche en el feed de Revs" data-i18n-alt="feedFeatureAlt"></figure>
             <div class="reaction reaction-heart">♥ <span>42</span></div>
             <div class="reaction reaction-wave">👋</div>
           </div>
           <div class="feature-copy">
             <span class="feature-number">02</span>
-            <p class="eyebrow red">Comunidad</p>
-            <h3>Comparte lo que<br>te mueve.</h3>
-            <p>Publica las mejores fotos de tu garaje, sigue a otros entusiastas y descubre historias cerca de ti o en cualquier parte.</p>
-            <ul class="mini-list"><li>Feed global y cercano</li><li>Likes y comentarios</li><li>Noticias del motor</li></ul>
+            <p class="eyebrow red" data-i18n="community">Comunidad</p>
+            <h3 data-i18n-html="communityTitle">Comparte lo que<br>te mueve.</h3>
+            <p data-i18n="communityCopy">Publica las mejores fotos de tu garaje, sigue a otros entusiastas y descubre historias cerca de ti o en cualquier parte.</p>
+            <ul class="mini-list"><li data-i18n="communityBullet1">Feed global y cercano</li><li data-i18n="communityBullet2">Likes y comentarios</li><li data-i18n="communityBullet3">Noticias del motor</li></ul>
           </div>
         </article>
 
         <article class="feature feature-garage">
           <div class="feature-copy">
             <span class="feature-number">03</span>
-            <p class="eyebrow red">Tu espacio</p>
-            <h3>Cada coche tiene<br>una historia.</h3>
-            <p>Crea tu garaje digital con datos del catálogo, personaliza la visibilidad y presenta tus coches como se merecen.</p>
-            <ul class="mini-list"><li>Catálogo visual detallado</li><li>Perfil y garaje personal</li><li>Privacidad por vehículo</li></ul>
+            <p class="eyebrow red" data-i18n="yourSpace">Tu espacio</p>
+            <h3 data-i18n-html="garageTitle">Cada coche tiene<br>una historia.</h3>
+            <p data-i18n="garageCopy">Crea tu garaje digital con datos del catálogo, personaliza la visibilidad y presenta tus coches como se merecen.</p>
+            <ul class="mini-list"><li data-i18n="garageBullet1">Catálogo visual detallado</li><li data-i18n="garageBullet2">Perfil y garaje personal</li><li data-i18n="garageBullet3">Privacidad por vehículo</li></ul>
           </div>
           <div class="feature-phone-stage garage-stage">
-            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/cars.png" alt="Garaje digital y listado de coches de Revs"></figure>
-            <img class="car-cutout" src="assets/screens/car-render.png" alt="Render de un automóvil del catálogo de Revs">
+            <figure class="phone phone-feature"><div class="phone-speaker"></div><img src="assets/screens/cars.png" alt="Garaje digital con un Toyota Yaris y su render de catálogo" data-i18n-alt="garageAlt"></figure>
+            <img class="car-cutout" src="assets/screens/car-render.png" alt="Render de un automóvil del catálogo de Revs" data-i18n-alt="renderAlt">
           </div>
         </article>
       </section>
 
-      <section class="route-band">
+      <section class="route-band" id="rutas">
         <div class="route-line" aria-hidden="true"></div>
-        <div class="section-shell route-content">
-          <p class="section-index">03 — Tu siguiente ruta</p>
-          <h2>No se trata solo<br>de llegar.</h2>
-          <p>Se trata de todo lo que ocurre entre el punto A y el punto B.</p>
-          <a href="#descargar" class="text-link">Empieza a conducir <span>→</span></a>
+        <div class="section-shell route-grid">
+          <div class="route-content">
+            <p class="section-index" data-i18n="routeIndex">03 — Tu siguiente ruta</p>
+            <h2 data-i18n-html="routeTitle">Graba cada<br>curva.</h2>
+            <p data-i18n="routeCopy">Inicia una ruta, registra el recorrido y el tiempo, guárdala en tu perfil y decide si es privada, solo para amigos o pública.</p>
+            <ul class="route-points">
+              <li><strong>01</strong><span data-i18n="routeStep1">Inicia la grabación desde el mapa</span></li>
+              <li><strong>02</strong><span data-i18n="routeStep2">Consulta el trazado y su duración</span></li>
+              <li><strong>03</strong><span data-i18n="routeStep3">Vuelve a abrirla o compártela</span></li>
+            </ul>
+            <a href="#descargar" class="text-link"><span data-i18n="startDriving">Empieza a conducir</span><b>→</b></a>
+          </div>
+          <div class="route-showcase">
+            <figure class="phone route-phone"><div class="phone-speaker"></div><img src="assets/screens/routes.png" alt="Listado de rutas guardadas en el perfil de Revs" data-i18n-alt="routesAlt"></figure>
+            <div class="route-chip"><span class="route-chip-dot"></span><div><strong data-i18n="routeSaved">Ruta guardada</strong><small data-i18n="routeSavedDetail">Trazado · tiempo · privacidad</small></div></div>
+          </div>
         </div>
       </section>
 
       <section class="download-final section-shell">
         <img class="final-logo" src="assets/revs-logo.png" alt="Logo de Revs">
-        <p class="eyebrow centered"><span></span> Revs está disponible</p>
-        <h2>Tu garaje te espera.</h2>
-        <p>Descarga Revs gratis y forma parte de una comunidad creada para la gente que siente lo mismo que tú al escuchar arrancar un motor.</p>
+        <p class="eyebrow centered"><span></span><b data-i18n="available">Revs está disponible</b></p>
+        <h2 data-i18n="finalTitle">Tu garaje te espera.</h2>
+        <p data-i18n="finalCopy">Descarga Revs gratis y forma parte de una comunidad creada para la gente que siente lo mismo que tú al escuchar arrancar un motor.</p>
         <div class="store-row centered-row">
-          <a class="store-button light" href="https://apps.apple.com/app/id6794880233" aria-label="Descargar Revs en App Store"><span class="store-icon apple" aria-hidden="true">●</span><span><small>Descárgala en el</small><strong>App Store</strong></span></a>
-          <a class="store-button light" href="https://play.google.com/apps/testing/com.revs3.revs3_app" aria-label="Participar en la prueba cerrada de Revs en Google Play"><span class="play-mark" aria-hidden="true"></span><span><small>Prueba cerrada en</small><strong>Google Play</strong></span></a>
+          <a class="store-button light" href="https://apps.apple.com/app/id6794880233" aria-label="Descargar Revs en App Store" data-i18n-aria="appStoreAria"><span class="store-icon apple" aria-hidden="true"></span><span><small data-i18n="appStoreOverline">Descárgala en el</small><strong>App Store</strong></span></a>
+          <a class="store-button light" href="https://play.google.com/apps/testing/com.revs3.revs3_app" aria-label="Participar en la prueba cerrada de Revs en Google Play" data-i18n-aria="playStoreAria"><span class="play-mark" aria-hidden="true"></span><span><small data-i18n="playStoreOverline">Prueba cerrada en</small><strong>Google Play</strong></span></a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-brand"><img src="assets/revs-logo.png" alt="" width="42" height="42"><strong>REVS</strong></div>
-      <p>La comunidad del motor, en tu bolsillo.</p>
-      <nav aria-label="Información legal"><a href="privacy.html">Privacidad</a><a href="support.html">Soporte</a></nav>
+      <p data-i18n="footerTagline">La comunidad del motor, en tu bolsillo.</p>
+      <nav aria-label="Información legal" data-i18n-aria="legalNavigation"><a href="privacy.html" data-i18n="privacy">Privacidad</a><a href="support.html" data-i18n="support">Soporte</a></nav>
       <small>© 2026 Daniel Uría Fernández · Revs</small>
     </footer>
     <script src="landing.js"></script>
